@@ -1,0 +1,34 @@
+y= noisy signal
+D= 2nd order diferrence coedff
+x= denoised outpit
+\lamda= control parameter to give weightage to 2nd term
+
+if y=x its min but if y is noisy the output can be x noisy
+to cancel out the noise we have the 2nd term
+
+
+y = known samples
+v= estimated samples
+St Sct is not unknown can be constructed based on y
+length of the signal 5 
+we know 1st ,2nd an d5th 
+Sx is 1 where we knwo sampke value  k x n (known x length)
+Sc is corresponding to missing samples (2 x 5) 
+
+D(Sty+Sctv)
+D is coming to ensure smotheness while estimation
+Sty = known sample information
+number of unknown < number of knowna 	
+
+Find the places where the signal is actuallly known
+
+
+
+2D
+
+y had dim M x N i have n signlas each column has M samples
+
+Missing sample estimation m times rows
+n times for columns
+
+detection = segmention problem where cat is presemt	

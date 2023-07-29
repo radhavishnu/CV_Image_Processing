@@ -1,0 +1,65 @@
+no of pixels correspoinding to gray level --- yaxis
+power of gamma correction
+good contrast image = distributed across all the gray levels
+no of occurances -= intensity/pixel info
+sum all the values of hist = m*n = no of pixels
+histeq gives better image 
+------------------------------------------------
+Go through
+
+piece wise contrast streching 
+histogram matching
+
+-------------------------------------------------
+3,4,5,1,1,2, tells no of pixels belonging to gray level
+write own function (imhist) to plot own histogram
+
+floor(cdf*(grayscale level{2^n-1})) will give s (grayscale info of shifted level using cdf) 
+this shifting will be the histogram equalisation operation, we perform this to make the input image to push to all the levels of gray, only the distribution of the pixels chnage, also the frequency will(may) also change 
+
+Left skewd/Right Skewd
+
+rk no of pixels associated with kth gray level
+
+difference between histeq and hist mapping
+
+key point descriptors
+image stiching (match)
+orthomosaicing 
+
+why sigular value decomposition not eigen value decomposition
+
+-----------------------------------------------------------------------
+Wavelet Transform
+Sacle invariant/shift invariant must be captured
+2 bamd filter(2 frequencies)
+Low filter / hIgh filter 
+Low pass filter/ High pass filter
+2 kind of coeff Approximation coeff / detailed coeff
+
+detailted coeff = reconstruction filter or interpolation 
+
+
+Downsample
+Upsample 
+Translation donme through convolution
+Taking alternate value of outupt of conv is downsampling it by 2 times 
+
+
+Pixel replication(base algorith for zooming (imresize))
+spatial resolution
+temporal resolution
+sprectral resolution
+radiometric resolution
+
+
+"HAAR" filter 2 coeff 
+"Debacuius" filter db filter db4 4 coef db6 6 coef db8 8 coeff
+
+convolution followed by downsampling 
+perfect matching filter	
+
+Extended to M-band
+Spatial size(lngth of signal) N = 2^j j=lvl of decomposition 
+
+Reconstruction and synthesis of signals

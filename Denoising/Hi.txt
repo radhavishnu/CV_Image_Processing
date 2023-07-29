@@ -1,0 +1,33 @@
+We blur our image with increasing sizes kernels. The larger our kernel becomes, the more blurred our image will appear.
+Your image will become progressively more blurred as kernal dimension increases This could easily lead to a point where you lose the edges of important structural objects in the image.
+
+clc;close all
+tau=linspace(-3,3,100); % time axis values
+fx1=(tau>=0 & tau<=1); % creates a sampled box function
+fx2f=(tau>=-1 & tau<=0); % fx2f is a sampledbox function folded
+subplot(3,1,1);
+stem(tau,fx1,'r.'); % sampled box function
+line([0,0],[0,1.1]); % plot yaxis;
+line([-3,3],[0,0]); % plot xaxis;
+fx3=zeros(1,length(tau)); % array to store output of convolution
+n=round(length(tau)/2);% folded function is moved forward n*delt duration
+delt=tau(2)-tau(1); % time between twosamples
+fx3(n)=sum(fx2f.*fx1)*delt;
+for i= 1:n
+y1=shift(fx2f,1);% circularly shift the function to right
+subplot(3,1,2)
+stem(tau,y1,'r.');
+line([0,0],[0,1.1]); % plot yaxis;
+line([-3,3],[0,0]); % plot xaxis;
+fx2f=y1; %
+drawnow;
+pause(1);
+fx3(n+i)=sum(fx2f.*fx1)*delt;
+% avoids plotting if number of shift is more than n
+if((n+i)<2*n-1)
+subplot(3,1,3)
+stem(tau,fx3,'r.');
+line([0,0],[0,1.1]); % plot yaxis;
+line([-3,3],[0,0]); % plot xaxis;
+end
+end

@@ -1,0 +1,65 @@
+M band wavelet system
+for 2 band wavelet system
+j= 2^N-1
+
+D=== Decomposition/analysis
+R=== Reconstruction/synthesis
+
+2 band wavelet
+D_Lowpass, D_Highpass
+R_Lowpass, R_Highpass
+
+            ---------a1
+x(n)N=8------
+            ---------d1
+
+Number of levels of decomposition is 3 since 2^3=8
+
+bcs of the double shift orthogonality we go for alternate samples
+
+h(n)=(-1)^n*g(n)
+
+Generalize for n level decomposition
+
+4 level decomp it will store 4th axxprox level and all detail levels 
+Own code as function file call it based on noumber of levels
+
+
+Nested spaces reconstruction using the scaled versions (One lie within the other)
+Phi(2^0*t)=Phi(2t)+Phi(2t-1)
+Phi(2t) scaled version of phi(t) 
+
+Phi(2^jt)=Phi(2^(j+1)t)+Phi(2^(j+1)t-1)
+
+Generalised notation
+Phi(2^j*t-k)= Sum n=0 - N-1  h(n)*Phi(2^j+1*(t-k)-n)
+
+Similarly derive the high pass
+h1(n)=(-1)^n*h(N-1-n)
+High pass is derived form the low pass.
+
+Prove that psi(t)=psi(2t)-psi(2t-1) is wrong
+Chcek if scaling bases are orthogonal to wavelet bases
+
+As j increases scaling space will become narrow
+
+K is translation j is scaling, analogous to convolution K is shift
+2*K is double shift so 2K is double shift orthogonality
+
+Vj is scaling space j denostes which space we are in
+
+Increasing j we are moving to finer and finer spaces
+
+--(objective metrics)?
+
+fourier bases cannit be scaled ,, in wavelet we can scale value
+
+psi csnnot beexpressed with psi itself
+Nested spaces not true in cases of psi
+
+Sum of filter coeff = sqrt(No of fiter band) sqrt(2) in case of haar4
+
+
+DFT 1D 2d
+Wavelet 1D 2D
+Basics of imgprocessing

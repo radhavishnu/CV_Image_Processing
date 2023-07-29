@@ -1,0 +1,17 @@
+Replace the zeros with Nan get intermidate output
+After col/row missing sample est we take avg, instead of avg if we add the image is more bright
+Map to 2-d denoising code
+
+Pixel-wise classification
+
+Boundary of sepearation image segementation
+gradient applied on level set
+
+gradient is equivalent to detectiong an edge to get boundary
+
+Guassian filter is for smotthening 
+watershed algorithm
+
+if edge info not clear this algorithm will fail
+
+bwdist dist computed on binary image nearest non zero pixel euclidean distance bw- binary either 0,1

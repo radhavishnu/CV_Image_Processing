@@ -1,0 +1,33 @@
+Wavelet Transform
+Sacle invariant/shift invariant must be captured
+2 bamd filter(2 frequencies)
+Low filter / hIgh filter 
+Low pass filter/ High pass filter
+2 kind of coeff Approximation coeff / detailed coeff
+
+detailted coeff = reconstruction filter or interpolation 
+
+
+Downsample
+Upsample 
+Translation donme through convolution
+Taking alternate value of outupt of conv is downsampling it by 2 times 
+
+
+Pixel replication(base algorith for zooming (imresize))
+spatial resolution
+temporal resolution
+sprectral resolution
+radiometric resolution
+
+
+"HAAR" filter 2 coeff 
+"Debacuius" filter db filter db4 4 coef db6 6 coef db8 8 coeff
+
+convolution followed by downsampling 
+perfect matching filter	
+
+Extended to M-band
+Spatial size(lngth of signal) N = 2^j j=lvl of decomposition 
+
+Reconstruction and synthesis of signals

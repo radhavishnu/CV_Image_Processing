@@ -1,0 +1,8 @@
+x,y axis notation 
+delt is time step analogous to spatial pixel in Image
+
+CApturre the horizonatal variation,
+
+2step i+2,j  -  (i,j)
+
+Zereo paddig to make size of op equal
